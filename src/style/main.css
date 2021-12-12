@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.post__btns{
+    display: flex;
+}
+#root{
+    display: flex;
+    justify-content: center;
+}
+.App{
+    width: 800px;
+}
+.post-enter {
+    transform: translateX(-350px);
+}
+.post-enter-active {
+    transform: translateX(0);
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+
+.page_count{
+    display: flex;
+    margin-top: 10px;
+}
+.page_count .page{
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #3d65b8;
+}
+.page_active{
+    font-weight: bold;
+    border: 2px solid red;
+}
